@@ -36,6 +36,10 @@ html {
     background-color: var(--black);
 }
 
+.enfase {
+    color: hsl(120,100%,40%);
+}
+
 p{
     color: var(--white);
 }
