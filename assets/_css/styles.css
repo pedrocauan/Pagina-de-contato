@@ -1,14 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: hsl(0, 2%, 12%);
+    --green: hsl(120,100%,18%);
+    --white: hsl(0, 2%, 88%);
+}
+
+
 /* Fonte do titulo*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
 /* Fonte do Principal*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Poppins:wght@300;700&display=swap');
 
 html {
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
 .titulo {
     font-family: 'Poppins', sans-serif;
-    color: hsl(120,100%,20%);
+    color: white;
+}
+
+.barra-lado{
+    min-height: 100vh;
+    background-color: var(--green);
+}
+
+.portifolio{
+    min-height: 100vh;
+    background-color: var(--black);
+}
+
+p{
+    color: var(--white);
 }
