@@ -10,35 +10,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
     <!--Styles.css (meu css)-->
     <link rel="stylesheet" href="assets/_css/styles.css">
-
+    <!-- icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        .card {
+            box-shadow: 0 0.2em 1em -0.125em #cacaca, 0 0 0 1px #e4e4e4;
+        }
+    </style>
 </head>
 
 <body>
     <!--Logo, Menu, barra de navegação-->
     <header>
-        <!--nav bar do bulma-->
-        <nav class="navbar is-black" aria-label="main navigation">
-            <div class="navbar-brand">
-                <!--Logo-->
-                <a class="navbar-item" href="https://bulma.io">
-                    <h1 class="title titulo"><span class="enfase">Pedro</span> Cauan</h1>
-                </a>
 
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                    data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <!--LOGO-->
+                <a class="navbar-item" href="https://github.com/pedrocauan" target="_blank">
+                    <h1 class="title">Pedro <span>Cauan</span></h1>
                 </a>
             </div>
-            <!--Menu-->
-            <div id="navbarBasicExample menu-content" class="navbar-menu">
+            <!--nav itens-->
+            <div id="navbarBasicExample" class="navbar-menu is-active">
                 <div class="navbar-start">
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="index.html">
                         Inicio
                     </a>
 
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="contact.html">
                         Contato
                     </a>
 
@@ -47,20 +46,121 @@
         </nav>
     </header>
     <!--conteudo principal-->
-    <main>
-        <!--Coluna principal-->
-        <div class="columns">
-            <!--Barra do lado esquerdo com a foto-->
-            <aside class="column is-one-third barra-lado">
-              <div class="barra-lado"></div>
-            </aside>
-            <section class="column portifolio">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident labore alias neque quasi similique, eos reiciendis quis incidunt laboriosam voluptatibus optio possimus error illo ullam deserunt vitae. Explicabo, odio rem.
-                </p>
-            </section>
-          </div>
+    <main class="section">
+        <div class="container">
+            <div class="columns">
+                <aside class="column">
+                    <div class="card">
+                        <!--FOTO-->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/_img/ooo.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <!--Titulo-->
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Pedro Cauan</p>
+                                    <span class="tag is-dark is-medium"> Javascript Fullstack Developer</span>
+                                </div>
+                            </div>
+                            <!--/Titulo-->
+                            <!--texto-->
+                            <div class="content">
+                                <p>(11) 95206-2088</p>
+                                <p>contato.pedro.cauan@gmail.com</p>
+                            </div>
+                            <!--/texto-->
+                        </div>
 
+                    </div>
+                </aside>
+                <div class="column is-9">
+                    <!--Sobre mim-->
+                    <div class="card">
+                        <article class="card-header">
+                            <h3 class="card-header-title">
+                                Sobre mim
+                            </h3>
+                            <button class="card-header-icon" aria-label="more options">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </article>
+                        <div class="card-content">
+                            <div class="content">
+                                <p>Olá, me chamo Pedro Cauan. Atualmente faço o curso da OneBitCode para me especializar
+                                    em javascript na parte do fullstack.
+                                    Conheci a programação em 2018 através da ETEC Jaraguá em São Paulo.</p>
+                                <p>No ano de 2021 iniciei os estudos por conta própria, me aprofundando cada vez mais em
+                                    programação web. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!--Experiencias-->
+                    <!--mc donalds-->
+                    <div class="card">
+                        <article class="card-header">
+                            <h3 class="card-header-title">
+                                Experiências
+                            </h3>
+                            <button class="card-header-icon" aria-label="more options">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </article>
+                        <div class="card-content">
+                            <div class="content">
+                                <!--MC DONALDS-->
+                                <div class="columns">
+                                    <!--Imagem redonda-->
+                                    <div class="column">
+                                        <figure class="image is-128x128">
+                                            <img class="is-rounded" src="assets/_img/McDonald's_SVG_logo.svg">
+                                          </figure>
+                                    </div>
+                                    <!--Descricao das experiencias-->
+                                    <div class="column is-9">
+                                        <h4 class="title is-4">
+                                            Mc Donalds <span class="tag is-black">Arcos Dourados LTDA</span>
+                                        </h4>
+                                        <p>Preparo de lanches, montagem de pedidos balcão e drive truu, limpeza da loja, operação de chapa para grelhados, operação do caixa</p>
+                                        <strong><i>03/2019 - 10/2020</i></strong>
+                                    </div>
+                                </div>
+                                <br>
+                                <!--VS TELECOM-->
+                                <div class="columns">
+                                    <!--Imagem redonda-->
+                                    <div class="column">
+                                        <figure class="image is-128x128">
+                                            <img class="is-rounded" src="assets/_img/vslogo.jfif">
+                                          </figure>
+                                    </div>
+                                    <!--Descricao das experiencias-->
+                                    <div class="column is-9">
+                                        <h4 class="title is-4">
+                                            Vs Telecom <span class="tag is-black">Vs Telecom LTDA</span>
+                                        </h4>
+                                        <p>Atendimento ao paciente SUS via telefone no Hospital das clínicas(HC-FMUSP), transferência de funcionarios internos para hamais autorizados,
+                                            contato do médico com o familiar do paciente, gerenciamento de Hamais
+                                        </p>
+                                        <strong><i>03/2019 - 10/2020</i></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--VS TELECOM-->
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--principal-->
+            </div>
+        </div>
     </main>
 </body>
 
