@@ -18,11 +18,11 @@
     <!--Logo, Menu, barra de navegação-->
     <header>
 
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav class="navbar" aria-label="main navigation">
             <div class="navbar-brand">
                 <!--LOGO-->
                 <a class="navbar-item" href="https://github.com/pedrocauan" target="_blank">
-                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                    <h1 class="title">Pedro <span>Cauan</span></h1>
                 </a>
             </div>
             <!--nav itens-->
@@ -37,9 +37,6 @@
                     </a>
 
                 </div>
-            </div>
-
-
             </div>
         </nav>
     </header>
@@ -75,7 +72,43 @@
                     </div>
                 </aside>
                 <div class="column is-9">
-                    1
+                    <!--formulário de contato-->
+                    <div class="card">
+                        <section class="card-header">
+                            <h2 class="card-header-title">
+                                Contato
+                            </h2>
+                        </section>
+                        <div class="card-content">
+                            <div class="content">
+                                <!--CAMPOS DO FORMULÁRIO-->
+                                <!--EMAIL-->
+                                <div class="field">
+                                    <label class="label">Email</label>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input" type="email" placeholder="Email" value="">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+
+                                    </div>
+                                </div>
+                                <!--MENSAGEM-->
+                                <div class="field">
+                                    <label class="label">Message</label>
+                                    <div class="control">
+                                        <textarea class="textarea" placeholder="Digite a mensagem.."></textarea>
+                                    </div>
+                                </div>
+                                <!--SUBMIT-->
+                                <div class="field is-grouped">
+                                    <div class="control">
+                                        <button class="button is-black">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!--principal-->
             </div>
